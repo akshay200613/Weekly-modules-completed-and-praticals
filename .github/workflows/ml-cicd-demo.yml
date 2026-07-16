@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "ml-cicd-demo/**"
 
 jobs:
   train-model:
     runs-on: ubuntu-latest
+
+    defaults:
+      run: 
+        working-directory: ml-cicd-demo
 
     steps:
 

@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "ml-cicd/**"
 
 jobs:
   train-and-deploy:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ml-cicd
 
     steps:
       - name: Checkout Repository
