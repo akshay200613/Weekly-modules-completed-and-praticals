@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/aksha/Downloads/Brototype/Week-45-CI_CD-for%20ML-Pipelines_Monitoring_Model_Versioning/model-versioning/mlruns/151162121730487307/6c12961cef434c31b9f7cd25a97d713c/artifacts
+end_time: 1784301213616
+entry_point_name: ''
+experiment_id: '151162121730487307'
+lifecycle_stage: active
+run_id: 6c12961cef434c31b9f7cd25a97d713c
+run_name: languid-duck-455
+run_uuid: 6c12961cef434c31b9f7cd25a97d713c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784301209973
+status: 3
+tags: []
+user_id: akshay

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1784301231805
+current_stage: Archived
+description: null
+last_updated_timestamp: 1784302574069
+name: IrisClassifier
+run_id: ed2532af729a4a3b9273af5abf2e12fb
+run_link: null
+source: file:///mnt/c/Users/aksha/Downloads/Brototype/Week-45-CI_CD-for%20ML-Pipelines_Monitoring_Model_Versioning/model-versioning/mlruns/151162121730487307/ed2532af729a4a3b9273af5abf2e12fb/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///mnt/c/Users/aksha/Downloads/Brototype/Week-45-CI_CD-for%20ML-Pipelines_Monitoring_Model_Versioning/model-versioning/mlruns/151162121730487307/ed2532af729a4a3b9273af5abf2e12fb/artifacts/model
+user_id: null
+version: 3

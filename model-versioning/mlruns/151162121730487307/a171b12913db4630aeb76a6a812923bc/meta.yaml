@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/aksha/Downloads/Brototype/Week-45-CI_CD-for%20ML-Pipelines_Monitoring_Model_Versioning/model-versioning/mlruns/151162121730487307/a171b12913db4630aeb76a6a812923bc/artifacts
+end_time: 1784301106984
+entry_point_name: ''
+experiment_id: '151162121730487307'
+lifecycle_stage: active
+run_id: a171b12913db4630aeb76a6a812923bc
+run_name: nervous-shrike-845
+run_uuid: a171b12913db4630aeb76a6a812923bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784301101984
+status: 3
+tags: []
+user_id: akshay
