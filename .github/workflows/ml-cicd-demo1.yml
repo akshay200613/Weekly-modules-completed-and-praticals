@@ -1,6 +1,8 @@
 name: ML CI/CD Pipeline1
 
 on:
+    workflow_dispatch:
+        
     push:
         branches:
             - main
