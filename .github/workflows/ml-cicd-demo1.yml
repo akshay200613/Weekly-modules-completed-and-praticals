@@ -37,7 +37,7 @@ jobs:
 
         - name: Test Prediction
           run: |
-            python test_model.py
+            python predict.py
 
         - name: Upload Model
           uses: actions/upload-artifact@v4
