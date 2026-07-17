@@ -1,11 +1,18 @@
-import requests
+from app import app
 
-url = "http://127.0.0.1:5000/predict"
+client = app.test_client()
 
-data = {
-    "features": [5.1, 3.5, 1.4, 0.2]
-}
+def test_prediction():
+    response = client.post(
+        "/predict",
+        json={
+            "features": [5.1, 3.5, 1.4, 0.2]
+        }
+    )
 
-response = requests.post(url, json=data)
+    assert response.status_code == 200
 
-print(response.json())
+    data = response.get_json()
+
+    assert "prediction" in data
+    assert isinstance(data["prediction"], int)

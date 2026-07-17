@@ -1,3 +1,8 @@
+from openpyxl.worksheet import datavalidation
+from openpyxl.worksheet import datavalidation
+from openpyxl.worksheet import datavalidation
+from openpyxl.worksheet import datavalidation
+from openpyxl.worksheet import datavalidation
 from flask import Flask, request, jsonify
 import joblib
 import time
@@ -35,10 +40,11 @@ def predict():
     try:
         data = request.get_json()
 
-        if "features" not in data:
+        if not data or "features" not in data:
             return jsonify({
                 "error": "Missing 'features' key"
-            }), 400
+        }), 400
+        
         features = data['features']
 
         prediction = model.predict([features])[0]
