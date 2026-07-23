@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 
   push:
-      branches:
-          - main
-      paths:
-      - "automated-retraining/data/**"
+    branches:
+      - main
+    paths:
+      - "automated-retraining/data/new_train.csv"
 
 jobs:
   retrain:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setpu Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -29,6 +29,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
+
       - name: Run Retraining Pipeline
         run: |
           python retrain.py
