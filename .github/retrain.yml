@@ -1,13 +1,21 @@
 name: Automated Retraining Pipeline
 
 on:
+  workflow_dispatch:
+
   push:
-    paths:
-      - "data/**"
+      branches:
+          - main
+      paths:
+      - "automated-retraining/data/**"
 
 jobs:
   retrain:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: automated-retraining
 
     steps:
       - name: Checkout Repository
