@@ -1,0 +1,26 @@
+name: Automated Retraining Pipeline
+
+on:
+  push:
+    paths:
+      - "data/**"
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setpu Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: Run Retraining Pipeline
+        run: |
+          python retrain.py
